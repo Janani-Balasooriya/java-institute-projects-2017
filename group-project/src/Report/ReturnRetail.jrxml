@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReturnRetail" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a706cf7b-1638-46b9-a8ee-11ec5a06f4e5">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="57"/>
+	<parameter name="Date" class="java.lang.String"/>
+	<parameter name="Time" class="java.lang.String"/>
+	<parameter name="Invoiceno" class="java.lang.String"/>
+	<parameter name="Subtotal" class="java.lang.String"/>
+	<parameter name="Discount" class="java.lang.String"/>
+	<parameter name="Nettotal" class="java.lang.String"/>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="204" y="89" width="164" height="36" uuid="8e97fde5-e5a0-420c-9c77-55e65cbd7c08"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Invoice Return]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="0" width="159" height="25" uuid="f26e0c0a-4271-4d2b-a5f0-b99e2682f62e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Elegant Outfits]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="25" width="159" height="25" uuid="73d14924-5dd4-4d7d-8ef8-0be45ba8b968"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[No:123]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="50" width="159" height="25" uuid="c993e62d-f458-40b7-8171-dd4358887cae"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[Mawanella]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="75" width="159" height="25" uuid="c00079b0-04a6-4761-a1a0-9c710d22a860"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[www.elegantoutfits@gmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="100" width="159" height="25" uuid="ed2b2ae8-f778-4474-85a2-85be5b62e49d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[0777123456]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="368" y="12" width="77" height="20" uuid="f1756655-da69-4f38-bb0b-f29b58c3c744"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="12" width="100" height="20" uuid="75193629-75ca-44c2-a4fb-2f6bc71333a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="368" y="32" width="77" height="20" uuid="e45141d8-5437-431f-8f58-8b25bda3e3a2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="32" width="100" height="20" uuid="27f97875-7b04-488a-8bb6-f308485f7dc0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="12" width="86" height="20" uuid="dd69e21e-c772-4aa6-b4e3-ee7a10d57a72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Invoice No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="104" y="12" width="100" height="20" uuid="1422215a-1a4d-4278-bc42-e7d5d22ecc22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Invoiceno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="14" y="0" width="90" height="20" uuid="a09f37f5-cc06-423a-a311-f04e9d82a2ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Batch No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="118" y="0" width="103" height="20" uuid="d38beb25-9ef4-4c95-9ac9-7a558064df9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="239" y="0" width="100" height="20" uuid="109a0ed6-d897-4ae8-b3df-7effd3e2e73f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unit Price:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="0" width="69" height="20" uuid="2dea4cc7-8958-41eb-8c45-4109bfc723a9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="0" width="100" height="20" uuid="620a46c2-3be6-4a66-b6f7-251e899d374c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="14" y="10" width="90" height="20" uuid="93044bcc-eb9f-4195-80fc-b854fac4ed47"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="118" y="10" width="103" height="20" uuid="9b4ada3c-b5c4-4fde-ae7c-5d51752d95fb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="239" y="10" width="100" height="20" uuid="b2ed8ea5-c51e-4bf0-9d72-989eb62be147"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="354" y="10" width="69" height="20" uuid="e37e16d8-4b7f-4b7a-bacf-77270a3b6ff9"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="10" width="100" height="20" uuid="10bd34f7-a038-40d5-91c1-4d715ea7cde7"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="368" y="10" width="77" height="20" uuid="b58376fd-c120-4ab3-93b2-abf3361671f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sub Total:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="30" width="77" height="20" uuid="fda7f5c9-e73f-4831-bc34-72548fdd6afa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="368" y="50" width="77" height="20" uuid="221ea1da-8f73-4bcc-9256-d12b1b53208a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="10" width="100" height="20" uuid="24f154eb-ee3e-4a75-a605-7d337c33ae18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Subtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="30" width="76" height="20" uuid="8ad468e3-8279-49a9-ad22-8e0d828b578b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="50" width="100" height="20" uuid="0cea3d02-b274-44d8-aee5-b61e93e914ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Nettotal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="455" y="0" width="100" height="1" uuid="93280740-cc4c-423c-87d3-7cc9d2c60242"/>
+			</line>
+			<line>
+				<reportElement x="455" y="82" width="100" height="1" uuid="3236d1e9-d0fb-4211-977d-c78a60c8533e"/>
+			</line>
+			<line>
+				<reportElement x="455" y="83" width="100" height="1" uuid="e72c0cb4-a465-425d-be9a-f27be2595bab"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="79" width="155" height="20" uuid="938c2c90-74bb-4ede-aff5-a8e6fa64f889"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Please give this to cashier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="59" width="239" height="20" uuid="8ac59401-bfc6-4498-9eae-25b57be40662"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Please note that you can return once]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="531" y="30" width="24" height="20" uuid="b6d1d9f1-d87f-4e3b-8d2c-f506d5fae370"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[%]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
