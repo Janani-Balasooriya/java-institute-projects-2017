@@ -27,7 +27,7 @@ java-institute-projects-2017/
 
 ## 1. Textile Wholesale & Retail Management System (Group Project)
 
-📄 **[Software Requirements Specification (PDF)](group-project/Textile_Wholesale_Retail_Management_System_SRS_2017.pdf)**
+📄 **[Software Requirements Specification (PDF)](group-project/Group project SRS.pdf)**
 
 A desktop management system for a **wholesale and retail textile business**, designed to
 replace the shop's manual record-keeping. Built by team **HYPERTHINK SOLUTION**.
@@ -66,7 +66,7 @@ Instructor: Mr. H.D. Thilan Lakshitha
 
 ## 2. Textile Pack Sales & Inventory System (Individual Project)
 
-📘 **[Technical report with source code (PDF)](individual-project/Textile_Pack_Sales_Inventory_System_2017.pdf)**
+📘 **[Technical report with source code (PDF)](individual-project/Individual project.pdf)**
 
 A complete sales and inventory system for a textile shop that sells clothing in packs by
 category. I designed, built and documented it **on my own**, and presented it at my
