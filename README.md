@@ -14,20 +14,11 @@ journey, both in the textile retail domain but built separately, with a differen
 | 1 | [Textile Wholesale & Retail Management System](#1-textile-wholesale--retail-management-system-group-project) | **Group Leader**, five-person team | Software Requirements Specification |
 | 2 | [Textile Pack Sales & Inventory System](#2-textile-pack-sales--inventory-system-individual-project) | **Sole developer**, individual viva | Technical report with source code |
 
-```
-java-institute-projects-2017/
-├── group-project/
-│   └── Textile_Wholesale_Retail_Management_System_SRS_2017.pdf
-└── individual-project/
-    ├── Textile_Pack_Sales_Inventory_System_2017.pdf
-    └── original-project-2017.zip
-```
-
 ---
 
 ## 1. Textile Wholesale & Retail Management System (Group Project)
 
-📄 **[Software Requirements Specification (PDF)](group-project/Group project SRS.pdf)**
+📄 **[Software Requirements Specification (PDF)](group-project/Textile_Wholesale_Retail_Management_System_SRS_2017.pdf)**
 
 A desktop management system for a **wholesale and retail textile business**, designed to
 replace the shop's manual record-keeping. Built by team **HYPERTHINK SOLUTION**.
@@ -66,7 +57,7 @@ Instructor: Mr. H.D. Thilan Lakshitha
 
 ## 2. Textile Pack Sales & Inventory System (Individual Project)
 
-📘 **[Technical report with source code (PDF)](individual-project/Individual project.pdf)**
+📘 **[Technical report with source code (PDF)](individual-project/Textile_Pack_Sales_Inventory_System_2017.pdf)**
 
 A complete sales and inventory system for a textile shop that sells clothing in packs by
 category. I designed, built and documented it **on my own**, and presented it at my
